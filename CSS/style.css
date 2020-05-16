@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+header > h1 {
+	text-transform:uppercase;
+	text-align:center;
+	animation: doimau ease-in 3s infinite;
+	
+}
+/* loai bo bullet, xoa margin,padding*/
+@keyframes doimau {
+	0% {
+		color: #0FC;	
+	}
+	50% {
+		color: #F00;	
+	}
+	75% {
+		color: #009;	
+	}
+}
+nav {
+	background-color:#CCC;
+}
+nav > ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	display:flex;
+}
+nav > ul > li >a {
+	display:block;
+	padding:15px 20px;
+	text-decoration:none;
+	color: blue;
+}
+nav > ul > li:last-child{
+	margin-left:auto;
+}
+nav > ul > li > a:hover {
+	background-color:#006;
+	color:#FFF;
+}
+nav > ul > li {
+	border-right: 1px solid #fff;
+	min-width:200px;
+	text-align:center;
+}
+section.content {
+	background-color: #999;
+}
+div.language {
+	display: flex;
+	border-bottom:1px solid #CCC;
+}
+div.language > div {
+	padding:10px;
+}
+div.language img {
+	transition:transform ease-in .5s;
+}
+div.language img:hover {
+	transform:skew(-20deg);
+}
+p {
+	margin:0;
+}
+footer {
+	text-align:center;
+	background-color:#006;
+	color: #fff;
+	padding:10px;
+}
+
